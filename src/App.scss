@@ -2,12 +2,37 @@ $font1: #5F5F5F;
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  
 }
 .horizontal {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-self: center;
+  // background-color: yellow;
+  &.seperate {
+    width: 100%;
+    justify-content: space-around;
+  }
+  &.left {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.adjust-title {
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: left;
+  // background-color: yellow;
 }
 
 .user-header {
@@ -75,6 +100,9 @@ $font1: #5F5F5F;
   margin: 0;
   font-weight: 500;
   font-size: 64px;
+  &.bold {
+    font-weight: 700;
+  }
 }
 
 .text-medium {
@@ -116,6 +144,23 @@ $font1: #5F5F5F;
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 400;
+}
+
+.task-box {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  height: 485px;
+  width: 353px;
+  border-radius: 49px;
+  background: linear-gradient(223.66deg, #FFE352 10.01%, #DD7777 100%);
+  color: white;
+  box-shadow: -1px 5px 20px 5px rgba(0,0,0,0.13);
+  -webkit-box-shadow: -1px 5px 20px 5px rgba(0,0,0,0.13);
+  -moz-box-shadow: -1px 5px 20px 5px rgba(0,0,0,0.13);
+  &.black {
+    background: linear-gradient(235.58deg, #6D6D6D 2.5%, #555555 100.21%);
+  }
 }
 
 .report-box {

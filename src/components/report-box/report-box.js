@@ -76,15 +76,15 @@ const srcProvider = (type) => {
 const ReportBox = ({type,}) => {
   return(
     <div className={`report-box ${type==='no' ? "negative":""}`}>
-      <div>
+      <div className="horizontal left">
         <div className="icon-tray">
           <div className={`icon-shadow purple large`}>
             <img className="icon-img large" src={srcProvider(type)} alt={type}/>
           </div>
         </div>
-        <div>
+        <div className="adjust-title">
           <p className="text-medium">Statistics</p>
-          <p className="text-large">{typeDictionary[type]}</p>
+          <p className="text-large bold">{typeDictionary[type]}</p>
         </div>
       </div>
       <div>
