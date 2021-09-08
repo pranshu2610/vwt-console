@@ -56,6 +56,22 @@ const data = [
     name: 'Page G',
     uv: 3490,
   },
+  {
+    name: 'Page F',
+    uv: 2390,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+  },
+  {
+    name: 'Page F',
+    uv: 2390,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+  },
 ];
 
 const typeDictionary = {
@@ -87,10 +103,10 @@ const ReportBox = ({type,}) => {
           <p className="text-large bold">{typeDictionary[type]}</p>
         </div>
       </div>
-      <div>
+      <div className="graph-area">
 
-          <BarChart width={300} height={100} data={data}>
-            <Bar radius={10} dataKey="uv" fill="white" />
+          <BarChart width={350} height={130} data={data}>
+            <Bar barSize={12} radius={10} dataKey="uv" fill="white" />
           </BarChart>
       </div>
     </div>
